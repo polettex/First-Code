@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Divs Horizontales</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Nunito', sans-serif;
-  }
-
-  .div-horizontal {
-    width: 100%;
-    height: 25vh;
-    text-align: center;
-  }
-
-  .cabecera {
-    background-image: url(img/header.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .cabecera h1 {
-    color: black;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-
-  .cabecera h2 {
-    color: black;
-    font-size: 1.5rem;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>First-Code</title>
 </head>
 <body>
-  <div class="div-horizontal cabecera">
+  <div class="container-horizontal cabecera">
     <h1>First Code</h1>
     <h2>Diseño y desarrollo web</h2>
   </div>
-  <div class="div-horizontal"></div>
-  <div class="div-horizontal"></div>
-  <div class="div-horizontal"></div>
+  <div class="container-horizontal second-container">
+    <div class="image-container"><img class="github" src="imagenes/github.png" alt="GitHub"></div>
+    <div class="image-container"><img class="github" src="imagenes/github.png" alt="GitHub"></div>
+    <div class="image-container"><img class="github" src="imagenes/github.png" alt="GitHub"></div>
+    <div class="image-container"><img class="github" src="imagenes/github.png" alt="GitHub"></div>
+    <div class="image-container"><img class="github" src="imagenes/github.png" alt="GitHub"></div>
+    <div class="image-container"><img class="github" src="imagenes/github.png" alt="GitHub"></div>
+  </div>
+  <div class="container-feedback">
+    <h3>¡DANOS TU FEEDBACK!</h3>
+    <div class="feedback-text">
+      <p>Es muy importante para nosotros recibir tus críticas y sugerencias.</p>
+    </div>
+  </div>
+  <div class="container-split">
+    <div class="container-text">
+      <h3>Sobre el proyecto</h3>
+      <p>¡La innovación del mañana viene del aprendizaje del ahora! Bienvenido al repositorio de proyectos web. Aquí podrás encontrar, de manera centralizada, los distintos trabajos desarrollados a lo largo del curso 2020-2021.</p>
+      <h3>Preguntas frecuentes</h3>
+      <ul>
+        <li>¿Qué es HTML?</li>
+        <li>¿Qué es CSS?</li>
+        <li>¿Qué es Git?</li>
+        <li>¿Qué es GitHub?</li>
+      </ul>
+    </div>
+    <div class="container-image">
+      <img src="imagenes/mapa.png" alt="Google Maps">
+    </div>
+  </div>
+  <div class="container-footer">
+    <div class="column">
+      <p>¡Hecho en Barcelona con corazón y mucho café!</p>
+    </div>
+    <div class="column">
+      <h4>Soporte</h4>
+      <ul>
+        <li>Repositorio de GitHub</li>
+        <li>Reportar un error</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h4>Diseñador</h4>
+      <ul>
+        <li>Twitter</li>
+        <li>Instagram</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-black-footer">
+    <p>2021-2022</p>
+  </div>
 </body>
 </html>
